@@ -14,48 +14,57 @@
 
     <link rel="stylesheet" href="/style/style.css" />
   </head>
-  <body>
-    <h1 class="text-center">My Task List</h1>
+  <body class="px-2 mb-5 py-2 mt-5">
+    <div class="container d-flex justify-content-center">
+      <div
+        class="col-12 col-lg-6 col-md-8 shadow px-lg-4 mb-5 pb-5 pt-4 px-3 bg-body rounded"
+      >
+        <h1 class="text-center pb-3">My Task List</h1>
 
-    <div class="input-group mb-3">
-      <input
-        type="text"
-        class="form-control"
-        id="new-task-item"
-        placeholder="Add a Task"
-        aria-label="Add a Task"
-        aria-describedby="button-addon2"
-      />
-      <button class="btn btn-warning" type="button" id="button-addon2">Add a Task</button>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="new-task-item"
+            placeholder="Add a Task"
+            aria-label="Add a Task"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-warning" type="button" id="button-addon2">
+            Add to Task
+          </button>
+        </div>
+        <ul class="list-group" id="li-group">
+          <!-- <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="firstCheckboxStretched"
+            />
+            <label class="form-check-label stretched-link" for="firstCheckboxStretched"
+              >First checkbox</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="4" />
+            <label class="form-check-label stretched-link" for="4">Second checkbox</label>
+          </li> -->
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="thirdCheckboxStretched"
+            />
+            <label class="form-check-label stretched-link" for="thirdCheckboxStretched"
+              >Third checkbox</label
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="list-group" id="li-group">
-      <li class="list-group-item">
-        <input
-          class="form-check-input me-1"
-          type="checkbox"
-          value=""
-          id="firstCheckboxStretched"
-        />
-        <label class="form-check-label stretched-link" for="firstCheckboxStretched"
-          >First checkbox</label
-        >
-      </li>
-      <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" id="4" />
-        <label class="form-check-label stretched-link" for="4">Second checkbox</label>
-      </li>
-      <li class="list-group-item">
-        <input
-          class="form-check-input me-1"
-          type="checkbox"
-          value=""
-          id="thirdCheckboxStretched"
-        />
-        <label class="form-check-label stretched-link" for="thirdCheckboxStretched"
-          >Third checkbox</label
-        >
-      </li>
-    </ul>
+
     <script></script>
     <script src="/script/main.js"></script>
     <script
